@@ -16,8 +16,8 @@ def index():
 def executar_codigo():
     try:
         
-        account_sid = 'AC30f1cc5d0927b9b86e5ce9083561705a'  
-        auth_token = '6da24fe94861323f8c934e13439922b0'  
+        account_sid = ''  
+        auth_token = ''  
 
         
         client = Client(account_sid, auth_token)
@@ -62,8 +62,8 @@ def executar_codigo():
                             # Enviar uma mensagem SMS
                             message = client.messages.create(
                                 body='UMA ARMA FOI DETECTADA',  
-                                from_='+14844982894',  
-                                to='+5511991160391'  
+                                from_='',  
+                                to=''  
                             )
 
                             
@@ -76,8 +76,8 @@ def executar_codigo():
                                                         
                             message = client.messages.create(
                                 body='UMA FACA FOI DETECTADA',  
-                                from_='+14844982894',  
-                                to='+5511991160391' 
+                                from_='',  
+                                to='' 
                             )
 
                         
